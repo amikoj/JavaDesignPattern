@@ -4,6 +4,10 @@ import com.hfcai.designPattern.dynamicProxy.GeoLoaction;
 import com.hfcai.designPattern.dynamicProxy.ILocation;
 import com.hfcai.designPattern.dynamicProxy.ILocationProxy;
 
+/**
+ * @author hfcai
+ * test class.
+ */
 public class MainClass {
 
 
