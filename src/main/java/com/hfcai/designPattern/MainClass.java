@@ -3,6 +3,8 @@ package com.hfcai.designPattern;
 import com.hfcai.designPattern.dynamicProxy.GeoLoaction;
 import com.hfcai.designPattern.dynamicProxy.ILocation;
 import com.hfcai.designPattern.dynamicProxy.ILocationProxy;
+import com.hfcai.designPattern.singleton.Singleton;
+import com.hfcai.designPattern.singleton.SingletonEnum;
 
 /**
  * @author hfcai
@@ -15,6 +17,8 @@ public class MainClass {
         //test dynamic proxy pattern
         testDynamicProxyPattern();
 
+        //单例模式
+        Object object=SingletonEnum.INSTANCE.getObject();
 
     }
 
