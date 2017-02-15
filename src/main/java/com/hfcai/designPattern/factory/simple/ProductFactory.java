@@ -38,6 +38,22 @@ public class ProductFactory {
         return product;
     }
 
+
+    public static Object create(String className){
+        try {
+          Object object= Class.forName(className).newInstance();
+            return object;
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
     /**
      * 产品不存在异常
      */
